@@ -1,0 +1,18 @@
+﻿using SistemTicket.Models.Enums;
+namespace SistemTicket.Models.Entities
+{
+    public class Ticket
+    {
+        public int Id { get; set; }
+
+        public string Title { get; set; }
+
+        public string Description { get; set; }
+
+        public TicketStatus Status { get; set; }
+
+        public TicketPriority? Priority { get; set; }
+
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    }
+}
